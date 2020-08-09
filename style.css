@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fa{
+    color: #fff;
+    font-weight: 100;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    background-color: #00aeff;
+    width: 100%;
+    /* height: 60px; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 50px;
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul button{
+    padding: 10px 10px;
+    border-right: 1px solid #fff;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+    outline: none;
+    background-color: transparent;
+}
+nav ul button:hover{
+    cursor: pointer;
+}
+.bg-wrapper{
+    background: url(ht.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.ct-con{
+    background-color: #084383;
+    width: 210px;
+    border-radius: 30px;
+    height: 35px;
+    position: relative;
+}
+.ct-con .con-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 120%;
+    background-color: #fff;
+    /* padding: 20px 0; */
+    border-radius: 0 0 5px 5px;
+    height: 7.2rem;
+    align-items: center;
+    opacity: 0;
+    transition: all .5s ease;
+    pointer-events: none;
+}
+.our-num:focus .con-content{
+    opacity: 1;
+    pointer-events: all;
+}
+.ct-con .con-content a{
+    padding: 15px 15px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+}
+.ct-con .con-content a:hover, 
+.ct-con .con-content a:nth-child(1):hover ~ .angle{
+    background-color: #cfcbcb;
+}
+.angle{
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 77%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(-50%) rotate(45deg);
+    top: -5px;
+}
+.ct-con p{
+    font-size: 0.65rem;
+    color: #fff;
+}
+.ct-con h4{
+    font-size: 1rem;
+    color: #fff;
+}
+.ct-img {
+    border-radius: 50px;
+    width: 40px;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+.tx-wrap{
+    position: absolute;
+    right: 15px;
+    top: 3px;
+}
+.tx-wrap p{
+    color: #2a8bda;
+}
+.tx-wrap h4{
+    font-size: 0.9rem;
+    color: #fff;
+}
+.nai{
+    margin-left: 8px;
+    color: #fff;
+}
+.ng-flag{
+    position: relative;
+}
+.naira-con{
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    position: absolute;
+    width: 250%;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    padding: 20px 0px;
+    border-radius: 0 0 5px 5px;
+    /* height: 7.2rem; */
+    align-items: center;
+    transition: all .5s ease;
+    pointer-events: none;
+}
+.ng-flag:focus .naira-con{
+    opacity: 1;
+    pointer-events: all;
+}
+.naira-con p{
+    color: #000;
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 0 15px 10px 15px;
+}
+.naira-con a{
+    width: 100%;
+    padding: 10px 15px;
+    color: #181818;
+    text-align: start;
+}
+.naira-con a:hover{
+    background-color: #00aeff;
+    color: #fff;
+}
+.angle2{
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 92%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(-50%) rotate(45deg);
+    top: -5px;
+}
+.acct-btn{
+    border-right: none;
+    position: relative;
+}
+.acct-btn .fa{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.acct-btn .acc{
+    margin-left: 8px;
+    color: #fff;
+}
+.acct-drop{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150%;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 0 0 5px 5px;
+    /* height: 7.2rem; */
+    align-items: center;
+    transition: all .5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+.acct-drop p{
+    font-size: 0.9rem;
+}
+.acct-drop a:nth-child(2){
+    width: 100%;
+    background-color: #00aeff;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+}
+.acct-drop a:nth-child(2):hover{
+    background-color: #0383be;
+}
+.acct-btn:focus .acct-drop{
+    opacity: 1;
+    pointer-events: all;
+}
+.txt-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.txt-center h1{
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.txt-center p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.form-container{
+    width: 80%;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.input1{
+    border: 1px solid grey;
+    width:100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 7px;
+}
+.input1 .fa{
+    color: #8d8a8a;
+    margin-right: 10px;
+}
+.form-container a{
+    padding: 10px 20px;
+    background-color: #01adfb;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+.form-container a:hover{
+    background-color: #0586c2;
+}
+.input2{
+    border: none;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.down-txt {
+    position: absolute;
+    top: 82%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 35px;
+    align-items: center;
+}
+.down-txt h2, .down-txt p{
+    color: #636060;
+}
+.hr{
+    width: 50px;
+    height: 4px;
+    background-color: #01adfb;
+    margin-top: 5px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
